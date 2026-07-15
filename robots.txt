@@ -1,0 +1,14 @@
+# =========================================================
+# robots.txt — Sheylegal
+# https://www.sheylegal.com
+# =========================================================
+
+User-agent: *
+Allow: /
+
+# Disallow private / system directories
+Disallow: /api/
+Disallow: /.git/
+
+# Sitemap
+Sitemap: https://www.sheylegal.com/sitemap.xml

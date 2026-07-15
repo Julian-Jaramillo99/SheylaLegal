@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta Confirmada — Sheylegal</title>
+  <meta name="description" content="Tu consulta con Sheylegal ha sido confirmada. Revisa los detalles y agrega el evento a tu calendario.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon"           href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180"    href="apple-touch-icon.png">
+  <link rel="manifest"                            href="manifest.webmanifest">
+  <meta name="theme-color" content="#5B1C2C">
+
+  <!-- Preload fonts -->
+  <link rel="preload" href="assets/fonts/RoyaleMilano-Regular.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="assets/fonts/Montserrat-Medium.ttf"    as="font" type="font/ttf"  crossorigin>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/checkout-premium.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header solid" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Sheylegal — Inicio">
+        <img src="assets/img/LOGO.png" alt="Sheylegal — Derecho para Industrias Creativas" width="393" height="320" loading="eager">
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="blog.html">Recursos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="contacto.html" class="mobile-nav-cta">Agenda una Consulta</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONFIRMATION PAGE -->
+  <main class="confirmation-hero" role="main" id="conf-data">
+    <div class="confirmation-card">
+
+      <!-- Success Icon -->
+      <div class="confirmation-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="m5 12 5 5L20 7"/>
+        </svg>
+      </div>
+
+      <h1>¡Consulta Confirmada!</h1>
+      <p class="conf-desc">
+        Hemos recibido tu solicitud de consulta. Revisa los detalles a continuación y
+        agrega el evento a tu calendario para no olvidarlo.
+        También recibirás una confirmación por correo electrónico.
+      </p>
+
+      <!-- Booking Details -->
+      <div class="confirmation-details">
+        <h4>Detalles de tu Consulta</h4>
+        <div class="conf-detail-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+          <span id="conf-name">—</span>
+        </div>
+        <div class="conf-detail-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/>
+          </svg>
+          <span id="conf-service">—</span>
+        </div>
+        <div class="conf-detail-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2"/>
+            <path d="M16 2v4M8 2v4M3 10h18"/>
+          </svg>
+          <span id="conf-datetime">—</span>
+        </div>
+        <div class="conf-detail-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M4 4h16v16H4Z"/>
+            <path d="m22 6-10 7L2 6"/>
+          </svg>
+          <span>Confirmación enviada a: <strong id="conf-email">—</strong></span>
+        </div>
+      </div>
+
+      <!-- Calendar Buttons -->
+      <div class="conf-cal-buttons">
+        <h4>Agrega tu cita al calendario</h4>
+        <a id="btn-gcal" href="#" target="_blank" rel="noopener noreferrer" class="btn-cal btn-cal-google">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2" fill="none" stroke="#4285F4" stroke-width="1.8"/>
+            <path d="M16 2v4M8 2v4M3 10h18" fill="none" stroke="#4285F4" stroke-width="1.8"/>
+            <text x="8" y="19" font-family="sans-serif" font-size="7" fill="#4285F4">G</text>
+          </svg>
+          Agregar a Google Calendar
+        </a>
+        <a id="btn-outlook" href="#" target="_blank" rel="noopener noreferrer" class="btn-cal btn-cal-outlook">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2" fill="none" stroke="#0078d4" stroke-width="1.8"/>
+            <path d="M3 10h18" fill="none" stroke="#0078d4" stroke-width="1.8"/>
+          </svg>
+          Agregar a Outlook
+        </a>
+        <a id="btn-ics" href="#" download="consulta-sheylegal.ics" class="btn-cal btn-cal-apple">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+          Agregar a Apple Calendar (iCal)
+        </a>
+      </div>
+
+      <!-- Back link -->
+      <a href="index.html" class="conf-back-link">← Volver al inicio</a>
+    </div>
+  </main>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/booking.js" defer></script>
+</body>
+
+</html>
