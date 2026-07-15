@@ -42,7 +42,7 @@
 
 *{ margin:0; padding:0; box-sizing:border-box; }
 
-html{ scroll-behavior: smooth; }
+html{ scroll-behavior: smooth; overflow-x: hidden; width:100%; }
 
 body{
   font-family: var(--font-body);
@@ -52,6 +52,8 @@ body{
   line-height: 1.7;
   font-size: 16px;
   overflow-x: hidden;
+  width:100%;
+  position: relative;
 }
 
 img{ max-width:100%; display:block; }
@@ -362,7 +364,7 @@ h3{ font-size: clamp(1.4rem, 2vw, 1.9rem); }
 @keyframes scrollLine{ 0%{ transform:scaleY(0); transform-origin:top;} 50%{transform:scaleY(1); transform-origin:top;} 51%{transform-origin:bottom;} 100%{transform:scaleY(0); transform-origin:bottom;} }
 
 /* ============ SECCIONES GENERALES ============ */
-section{ padding: 110px 0; position:relative; }
+section{ padding: 110px 0; position:relative; overflow-x: hidden; }
 .section-alt{ background: var(--rosa-suave); }
 .section-vino{ background: var(--vino-profundo); color: var(--blanco); }
 .section-vino h2, .section-vino h3{ color: var(--blanco); }
@@ -805,7 +807,7 @@ section{ padding: 110px 0; position:relative; }
 /* ---------- Franja de estadísticas flotante ---------- */
 .stat-strip{
   position:relative;
-  margin-top: -30px;
+  margin-top: -10px;
   z-index: 5;
 }
 .stat-strip .grid{ gap: 20px; }
@@ -966,7 +968,7 @@ section{ padding: 110px 0; position:relative; }
   .hero-thread{ display:none; }
   .split-feature{ grid-template-columns: 1fr; }
   .split-feature .card-side{ margin-left:0; margin-top:-60px; }
-  .stat-strip{ margin-top: -15px; }
+  .stat-strip{ margin-top: -5px; }
   .stat-strip .grid-4{ grid-template-columns: repeat(2,1fr); }
 }
 
@@ -996,6 +998,7 @@ section{ padding: 110px 0; position:relative; }
   .header-actions .btn-primary{ display:none; }
   .header-actions{ gap:10px; }
   .grid-3, .grid-4, .grid-2{ grid-template-columns: 1fr; }
+  .stat-strip .grid-4{ grid-template-columns: 1fr; }
   .footer-grid{ grid-template-columns: 1fr; gap: 40px; }
   .form-grid{ grid-template-columns: 1fr; }
   section{ padding: 70px 0; }
